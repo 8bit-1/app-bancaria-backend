@@ -1,0 +1,16 @@
+#spring.application.name=appBancaria
+
+spring:
+  application:
+    name: appBancaria
+  threads:
+    virtual:
+      enabled: true
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/appBancaria}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:12rf1234}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+#    open-in-view: false
